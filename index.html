@@ -1,0 +1,1391 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorria Bem Garavelo | Clínica Odontológica em Aparecida de Goiânia</title>
+    <meta name="description" content="Sorria Bem Garavelo - Odontologia Humanizada em Aparecida de Goiânia. Estrutura moderna, acolhedora, raio-X digital no local, implantes, alinhadores invisíveis, ortodontia e estética dental." />
+    
+    <!-- Open Graph / Redes Sociais -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://maps.app.goo.gl/1mj4SZGZYQGaWLKn6" />
+    <meta property="og:title" content="Sorria Bem Garavelo | Clínica Odontológica em Aparecida de Goiânia" />
+    <meta property="og:description" content="Odontologia humanizada e tecnologia moderna em Aparecida de Goiânia. Conheça nossa estrutura e agende sua avaliação." />
+    <meta property="og:image" content="./imagens/fachada.jpg" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Favicon Oficial Sorria Bem (Preenchimento Completo e Máxima Visibilidade na Aba) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./imagens/favicon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./imagens/favicon.png" />
+    <link rel="apple-touch-icon" href="./imagens/favicon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN & Configuração Oficial da Paleta Sorria Bem -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-yellow': '#FBBF24',
+              'brand-dark': '#0F172A',
+              'brand-light': '#F8FAFC',
+              'brand-navy': '#1E293B',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Lucide Icon System -->
+    <script src="https://unpkg.com/lucide@0.474.0/dist/umd/lucide.min.js"></script>
+  </head>
+  <body class="min-h-screen bg-white antialiased font-sans text-brand-dark">
+
+    <!-- 1. UNIVERSAL STICKY HEADER (Amarelo Vibrante - Paleta Fachada) -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-brand-yellow shadow-md border-b border-amber-400/80 py-2 sm:py-2.5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between gap-4">
+          <!-- Logo Sorria Bem Garavelo Oficial (sem fundo) -->
+          <a href="#inicio" class="flex items-center select-none group shrink-0" id="sorria-bem-logo">
+            <img 
+              src="./imagens/logo-header.png" 
+              alt="Sorria Bem Garavelo" 
+              class="h-20 lg:h-24 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+            />
+          </a>
+
+          <!-- Desktop Menu Links (Preto/Navy compacto com hover branco no fundo amarelo) -->
+          <nav class="hidden lg:flex items-center gap-3.5 xl:gap-5" id="desktop-nav">
+            <a href="#inicio" class="text-sm font-bold transition-colors hover:text-white text-[#0F172A] flex items-center gap-1.5 group shrink-0">
+              <i data-lucide="home" class="w-4 h-4 shrink-0 text-[#0F172A] group-hover:text-white transition-colors"></i>
+              <span>Início</span>
+            </a>
+            <a href="#galeria" class="text-sm font-bold transition-colors hover:text-white text-[#0F172A] flex items-center gap-1.5 group shrink-0">
+              <i data-lucide="image" class="w-4 h-4 shrink-0 text-[#0F172A] group-hover:text-white transition-colors"></i>
+              <span>Galeria</span>
+            </a>
+            <a href="#servicos" class="text-sm font-bold transition-colors hover:text-white text-[#0F172A] flex items-center gap-1.5 group shrink-0">
+              <i data-lucide="stethoscope" class="w-4 h-4 shrink-0 text-[#0F172A] group-hover:text-white transition-colors"></i>
+              <span>Especialidades</span>
+            </a>
+            <a href="#sobre" class="text-sm font-bold transition-colors hover:text-white text-[#0F172A] flex items-center gap-1.5 group shrink-0">
+              <i data-lucide="info" class="w-4 h-4 shrink-0 text-[#0F172A] group-hover:text-white transition-colors"></i>
+              <span>Quem Somos</span>
+            </a>
+            <a href="#diferenciais" class="text-sm font-bold transition-colors hover:text-white text-[#0F172A] flex items-center gap-1.5 group shrink-0">
+              <i data-lucide="sparkles" class="w-4 h-4 shrink-0 text-[#0F172A] group-hover:text-white transition-colors"></i>
+              <span>Diferenciais</span>
+            </a>
+            <a href="#faq" class="text-sm font-bold transition-colors hover:text-white text-[#0F172A] flex items-center gap-1.5 group shrink-0">
+              <i data-lucide="help-circle" class="w-4 h-4 shrink-0 text-[#0F172A] group-hover:text-white transition-colors"></i>
+              <span>Dúvidas</span>
+            </a>
+            <a href="#localizacao" class="text-sm font-bold transition-colors hover:text-white text-[#0F172A] flex items-center gap-1.5 group shrink-0">
+              <i data-lucide="map-pin" class="w-4 h-4 shrink-0 text-[#0F172A] group-hover:text-white transition-colors"></i>
+              <span>Localização</span>
+            </a>
+            <a href="#contato" class="text-sm font-bold transition-colors hover:text-white text-[#0F172A] flex items-center gap-1.5 group shrink-0">
+              <i data-lucide="phone" class="w-4 h-4 shrink-0 text-[#0F172A] group-hover:text-white transition-colors"></i>
+              <span>Contato</span>
+            </a>
+          </nav>
+
+          <!-- Botão Agendar Consulta Desktop (Preto/Navy compacto para destaque máximo no Amarelo) -->
+          <div class="hidden lg:flex items-center shrink-0" id="desktop-cta">
+            <a
+              href="https://wa.me/556282790106?text=Olá! Gostaria de agendar uma consulta na Sorria Bem Garavelo."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-[#0F172A] text-brand-yellow hover:text-white font-bold text-sm shadow-md hover:bg-slate-800 transition-all duration-300 hover:-translate-y-0.5 cursor-pointer shrink-0 btn-tactile"
+            >
+              <i data-lucide="calendar" class="w-4 h-4 mr-2 text-brand-yellow"></i>
+              Agendar Consulta
+            </a>
+          </div>
+
+          <!-- Mobile Toggle Indicator Button -->
+          <button id="mobile-menu-toggle" class="lg:hidden p-2 rounded-lg text-[#0F172A] hover:text-white hover:bg-black/10 focus:outline-none transition-colors" aria-label="Alternar menu">
+            <i data-lucide="menu" id="menu-icon-hamburger" class="w-6 h-6"></i>
+            <i data-lucide="x" id="menu-icon-close" class="w-6 h-6 hidden"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile dropdown tray (Amarelo & Preto) -->
+      <div id="mobile-menu-tray" class="hidden lg:hidden bg-brand-yellow border-t border-amber-400 shadow-xl overflow-hidden mt-3 transition-all duration-300">
+        <div class="px-4 pt-3 pb-6 space-y-2 sm:px-6">
+          <a href="#inicio" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-bold text-[#0F172A] hover:text-white hover:bg-black/10 transition-all flex items-center gap-2.5">
+            <i data-lucide="home" class="w-5 h-5 shrink-0 text-[#0F172A]"></i>
+            <span>Início</span>
+          </a>
+          <a href="#galeria" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-bold text-[#0F172A] hover:text-white hover:bg-black/10 transition-all flex items-center gap-2.5">
+            <i data-lucide="image" class="w-5 h-5 shrink-0 text-[#0F172A]"></i>
+            <span>Galeria</span>
+          </a>
+          <a href="#servicos" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-bold text-[#0F172A] hover:text-white hover:bg-black/10 transition-all flex items-center gap-2.5">
+            <i data-lucide="stethoscope" class="w-5 h-5 shrink-0 text-[#0F172A]"></i>
+            <span>Especialidades</span>
+          </a>
+          <a href="#sobre" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-bold text-[#0F172A] hover:text-white hover:bg-black/10 transition-all flex items-center gap-2.5">
+            <i data-lucide="info" class="w-5 h-5 shrink-0 text-[#0F172A]"></i>
+            <span>Quem Somos</span>
+          </a>
+          <a href="#diferenciais" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-bold text-[#0F172A] hover:text-white hover:bg-black/10 transition-all flex items-center gap-2.5">
+            <i data-lucide="sparkles" class="w-5 h-5 shrink-0 text-[#0F172A]"></i>
+            <span>Diferenciais</span>
+          </a>
+          <a href="#faq" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-bold text-[#0F172A] hover:text-white hover:bg-black/10 transition-all flex items-center gap-2.5">
+            <i data-lucide="help-circle" class="w-5 h-5 shrink-0 text-[#0F172A]"></i>
+            <span>Dúvidas Frequentes</span>
+          </a>
+          <a href="#localizacao" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-bold text-[#0F172A] hover:text-white hover:bg-black/10 transition-all flex items-center gap-2.5">
+            <i data-lucide="map-pin" class="w-5 h-5 shrink-0 text-[#0F172A]"></i>
+            <span>Localização</span>
+          </a>
+          <a href="#contato" class="mobile-nav-link block px-3 py-2 rounded-lg text-base font-bold text-[#0F172A] hover:text-white hover:bg-black/10 transition-all flex items-center gap-2.5">
+            <i data-lucide="phone" class="w-5 h-5 shrink-0 text-[#0F172A]"></i>
+            <span>Contato</span>
+          </a>
+          <div class="pt-4 border-t border-amber-400/80">
+            <a
+              href="https://wa.me/556282790106?text=Olá! Gostaria de agendar uma consulta na Sorria Bem Garavelo."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full inline-flex items-center justify-center px-5 py-4 min-h-[48px] rounded-xl bg-[#0F172A] text-brand-yellow font-black text-base shadow-md hover:bg-slate-800 transition-all cursor-pointer btn-tactile"
+            >
+              <i data-lucide="phone" class="w-5 h-5 mr-2 text-brand-yellow"></i>
+              Falar no WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- 2. HERO SECTION (Degradê neutro sofisticado, grid tecnológico, marcas d'água oficiais e iluminação acolhedora) -->
+      <section 
+        id="inicio" 
+        class="min-h-screen flex items-center pt-32 lg:pt-40 pb-16 lg:pb-24 relative overflow-hidden bg-gradient-to-b from-slate-200 via-slate-50 to-white"
+      >
+        <!-- 1. Padrão de Fundo Tecnológico / Clínico: Grid sutil amarelado (#FBBF24/10) tamanho 20px -->
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(251,191,36,0.10)_1px,transparent_1px),linear-gradient(to_bottom,rgba(251,191,36,0.10)_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none -z-10"></div>
+
+        <!-- Textura sutil complementar de papel / ruído premium -->
+        <div 
+          class="absolute inset-0 pointer-events-none -z-10 opacity-[0.03]"
+          style="background-image: url('data:image/svg+xml,%3Csvg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noiseFilter\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.8\' numOctaves=\'3\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noiseFilter)\'/%3E%3C/svg%3E'); background-repeat: repeat;"
+        ></div>
+
+        <!-- 4a. Glow Iluminação Amarela no canto superior esquerdo (aquecimento da marca atrás do texto) -->
+        <div class="absolute -top-16 -left-16 sm:top-4 sm:left-4 w-[420px] sm:w-[560px] h-[420px] sm:h-[560px] bg-brand-yellow/15 rounded-full blur-[110px] pointer-events-none -z-10"></div>
+
+        <!-- 1a. Grafismo da Marca: Sorriso Amarelo Grande atrás da foto à direita (opacidade 0.15) -->
+        <div class="absolute -top-10 -right-16 sm:-right-8 lg:right-2 w-[380px] sm:w-[500px] lg:w-[620px] text-brand-yellow opacity-[0.15] pointer-events-none -z-10 transform -rotate-12 select-none">
+          <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+            <path d="M 18 28 C 38 112, 162 112, 182 28" stroke="currentColor" stroke-width="16" stroke-linecap="round" />
+          </svg>
+        </div>
+
+        <!-- 1b. Grafismo da Marca: Sorriso no canto inferior esquerdo (opacidade 0.10) -->
+        <div class="absolute -bottom-16 -left-12 sm:-left-4 w-[280px] sm:w-[380px] text-brand-yellow opacity-[0.10] pointer-events-none -z-10 transform rotate-12 select-none">
+          <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+            <path d="M 20 30 C 40 108, 160 108, 180 30" stroke="currentColor" stroke-width="14" stroke-linecap="round" />
+          </svg>
+        </div>
+
+        <!-- 1c. Grafismo da Marca: Terceiro sorriso cortado no topo da tela (atrás do menu - continuidade visual) -->
+        <div class="absolute -top-32 sm:-top-44 left-1/2 -translate-x-1/2 w-[520px] sm:w-[720px] text-brand-yellow opacity-[0.10] pointer-events-none -z-10 transform -rotate-3 select-none">
+          <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+            <path d="M 16 26 C 36 112, 164 112, 184 26" stroke="currentColor" stroke-width="15" stroke-linecap="round" />
+          </svg>
+        </div>
+
+        <!-- 3. Elemento Clínico: Ícone Oficial da Marca sem fundo como marca d'água -->
+        <div 
+          class="absolute top-1/3 left-4 sm:left-10 lg:left-16 w-[300px] sm:w-[420px] h-[300px] sm:h-[420px] opacity-10 pointer-events-none -z-10 -translate-y-1/2 bg-contain bg-no-repeat bg-center select-none"
+          style="background-image: url('./imagens/favicon.png');"
+        ></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative w-full">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center w-full">
+            
+            <!-- Coluna de Textos (Esquerda no desktop, centralizado no mobile) -->
+            <div class="lg:col-span-7 w-full relative animate-hero-entrance flex flex-col justify-center items-center text-center lg:items-start lg:text-left">
+              
+              <!-- Selo Superior Garavelo (Centralizado no mobile, alinhado à esquerda no desktop) -->
+              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-yellow/15 border border-brand-yellow/40 text-brand-dark text-xs font-black tracking-wider uppercase mb-4 shadow-2xs mx-auto lg:mx-0">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-600 shrink-0"></i>
+                <span>Aparecida de Goiânia • Setor Garavelo</span>
+              </div>
+              
+              <!-- Título Principal com alto impacto visual no Mobile -->
+              <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-brand-dark tracking-tight leading-tight mb-5 sm:mb-7 font-display">
+                Seu <span class="text-amber-500">sorriso</span> transforma sua vida. <br class="hidden sm:inline" />
+                <span class="text-amber-500 font-black">
+                  O próximo pode ser o seu.
+                </span>
+              </h1>
+
+              <!-- Subtítulo aumentado (text-base no mobile e text-lg no desktop, borda apenas no desktop) -->
+              <p class="text-base lg:text-lg text-slate-600 leading-relaxed max-w-xl mx-auto lg:mx-0 mb-6 font-medium border-l-0 pl-0 lg:border-l-4 lg:border-brand-yellow lg:pl-4">
+                Na <strong class="text-brand-dark font-bold">Sorria Bem Garavelo</strong>, unimos tecnologia odontológica avançada e atendimento humanizado para cuidar do seu sorriso com respeito, conforto e excelência.
+              </p>
+
+              <!-- Caixa dos 4 Ícones de Diferenciais (1 col em telas pequenas, 2 em médias, 4 no desktop) -->
+              <div class="bg-white rounded-2xl p-3.5 sm:p-4 border border-slate-200 shadow-sm max-w-xl mx-auto lg:mx-0 my-2 w-full">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3 text-brand-dark">
+                  <div class="flex items-center justify-center lg:justify-start text-center lg:text-left gap-2.5 p-1">
+                    <div class="p-1.5 bg-amber-50 rounded-lg text-amber-600 shrink-0 border border-amber-200/70">
+                      <i data-lucide="heart" class="w-4 h-4"></i>
+                    </div>
+                    <span class="text-xs sm:text-[11px] lg:text-[11px] font-bold leading-tight text-slate-800">Atendimento Humanizado</span>
+                  </div>
+                  <div class="flex items-center justify-center lg:justify-start text-center lg:text-left gap-2.5 p-1">
+                    <div class="p-1.5 bg-amber-50 rounded-lg text-amber-600 shrink-0 border border-amber-200/70">
+                      <i data-lucide="cpu" class="w-4 h-4"></i>
+                    </div>
+                    <span class="text-xs sm:text-[11px] lg:text-[11px] font-bold leading-tight text-slate-800">Tecnologia Avançada</span>
+                  </div>
+                  <div class="flex items-center justify-center lg:justify-start text-center lg:text-left gap-2.5 p-1">
+                    <div class="p-1.5 bg-amber-50 rounded-lg text-amber-600 shrink-0 border border-amber-200/70">
+                      <i data-lucide="sparkles" class="w-4 h-4"></i>
+                    </div>
+                    <span class="text-xs sm:text-[11px] lg:text-[11px] font-bold leading-tight text-slate-800">Resultados que Encantam</span>
+                  </div>
+                  <div class="flex items-center justify-center lg:justify-start text-center lg:text-left gap-2.5 p-1">
+                    <div class="p-1.5 bg-amber-50 rounded-lg text-amber-600 shrink-0 border border-amber-200/70">
+                      <i data-lucide="shield-check" class="w-4 h-4"></i>
+                    </div>
+                    <span class="text-xs sm:text-[11px] lg:text-[11px] font-bold leading-tight text-slate-800">Quem Compara Trata Aqui</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Botões de Ação Hero (Empilhados w-full no mobile com gap-4, lado a lado no desktop) -->
+              <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 my-5 w-full max-w-xl mx-auto lg:mx-0">
+                <a
+                  href="https://wa.me/556282790106?text=Olá! Gostaria de agendar uma consulta na Sorria Bem Garavelo."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 sm:py-3.5 bg-brand-yellow text-brand-dark font-black text-sm shadow-md hover:bg-amber-400 hover:shadow-lg hover:shadow-brand-yellow/40 hover:-translate-y-0.5 transition-all duration-300 cursor-pointer rounded-xl btn-glow btn-tactile"
+                >
+                  <i data-lucide="phone" class="w-4 h-4 mr-2 animate-pulse text-brand-dark"></i>
+                  Agendar pelo WhatsApp
+                </a>
+                <a
+                  href="#servicos"
+                  class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 sm:py-3.5 rounded-xl border-2 border-[#0F172A] bg-white font-black text-[#0F172A] hover:bg-[#0F172A] hover:text-brand-yellow transition-all duration-300 cursor-pointer text-sm tracking-wide shadow-xs gap-2 group btn-tactile"
+                >
+                  <span>Ver Especialidades</span>
+                  <i data-lucide="arrow-down" class="w-4 h-4 text-[#0F172A] group-hover:text-brand-yellow group-hover:translate-y-0.5 transition-all"></i>
+                </a>
+              </div>
+
+              <!-- Selos de Segurança e Biossegurança Clínica -->
+              <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 my-3 max-w-xl mx-auto lg:mx-0 w-full">
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200/80 text-emerald-800 text-[11px] font-bold shadow-2xs">
+                  <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-600 shrink-0"></i>
+                  <span>Biossegurança Certificada</span>
+                </div>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200/80 text-blue-900 text-[11px] font-bold shadow-2xs">
+                  <i data-lucide="check-circle" class="w-3.5 h-3.5 text-blue-600 shrink-0"></i>
+                  <span>Esterilização Rigorosa</span>
+                </div>
+              </div>
+
+              <!-- Feature Checks -->
+              <div class="grid grid-cols-3 gap-2 border-t border-slate-200/80 pt-4 max-w-xl mx-auto lg:mx-0 w-full">
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start sm:space-x-1.5 text-slate-700 text-center lg:text-left">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0 mb-0.5 sm:mb-0"></i>
+                  <span class="text-[10px] sm:text-[11px] font-bold leading-tight">Raio X Panorâmico</span>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start sm:space-x-1.5 text-slate-700 text-center lg:text-left">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0 mb-0.5 sm:mb-0"></i>
+                  <span class="text-[10px] sm:text-[11px] font-bold leading-tight">Estacionamento</span>
+                </div>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start sm:space-x-1.5 text-slate-700 text-center lg:text-left">
+                  <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-500 shrink-0 mb-0.5 sm:mb-0"></i>
+                  <span class="text-[10px] sm:text-[11px] font-bold leading-tight">Doutores Especialistas</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Coluna da Foto da Fachada em Card à Direita (com Glow radial âmbar suave) -->
+            <div class="lg:col-span-5 w-full relative animate-hero-entrance flex justify-center lg:justify-end items-center mt-10 lg:mt-0">
+              <div class="w-full max-w-md lg:max-w-lg animate-float relative">
+                <!-- 4b. Glow radial amarelo suave atrás do card da fachada -->
+                <div class="absolute -inset-4 sm:-inset-6 bg-brand-yellow/20 rounded-full blur-[90px] lg:blur-[100px] pointer-events-none -z-10"></div>
+
+                <div class="relative group rounded-3xl overflow-hidden shadow-[0_20px_50px_-12px_rgba(15,23,42,0.3)] transition-all duration-300 hover:shadow-[0_25px_60px_-15px_rgba(15,23,42,0.38)] max-h-[70vh] flex flex-col justify-center">
+                  <img 
+                    src="./imagens/fachada.jpg" 
+                    alt="Fachada Sorria Bem Garavelo - Odontologia" 
+                    class="w-full h-auto max-h-[60vh] object-cover rounded-3xl aspect-[4/3] lg:aspect-auto"
+                  />
+                  <!-- Badge sobreposto elegante: preto translúcido com texto branco -->
+                  <div class="absolute bottom-4 left-4 right-4 bg-black/70 backdrop-blur-md text-white p-3 rounded-2xl flex items-center justify-between text-xs border border-white/10 shadow-xl">
+                    <span class="font-bold text-xs sm:text-sm text-white flex items-center gap-2">
+                      <span class="w-2 h-2 rounded-full bg-emerald-400 inline-block animate-ping"></span>
+                      Nossa Fachada
+                    </span>
+                    <span class="text-slate-200 flex items-center gap-1.5 font-medium text-[11px]">
+                      <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-yellow"></i>
+                      Avenida da Igualdade
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. GALERIA & ESTRUTURA SECTION (Transição invisível a partir da base branca do Hero) -->
+      <section id="galeria" class="py-20 bg-white relative overflow-hidden">
+        <!-- Glows de profundidade -->
+        <div class="absolute top-1/2 left-0 w-80 h-80 bg-amber-200/20 rounded-full blur-3xl pointer-events-none -translate-y-1/2"></div>
+        <div class="absolute top-1/2 right-0 w-80 h-80 bg-slate-200/40 rounded-full blur-3xl pointer-events-none -translate-y-1/2"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+            <span class="text-xs font-black uppercase tracking-wider text-amber-900 bg-amber-100 border border-amber-300/70 px-3.5 py-1.5 rounded-full w-max mb-4 block mx-auto font-sans">Nossa Estrutura</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight mb-4 font-display">
+              Conheça nossa <span class="text-amber-500">estrutura</span>
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed font-normal font-sans">
+              Ambientes modernos, confortáveis e preparados para oferecer a melhor experiência a você e sua família.
+            </p>
+          </div>
+
+          <!-- Swiper Container -->
+          <div class="relative px-0 md:px-12">
+            <div class="swiper gallery-swiper overflow-hidden rounded-2xl reveal">
+              <div class="swiper-wrapper">
+                <!-- Slide 1: Fachada Nova -->
+                <div class="swiper-slide">
+                  <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-100 border border-slate-200 flex items-center justify-center shadow-md hover:border-amber-400 transition-all duration-300">
+                    <img 
+                      src="./imagens/fachada.jpg" 
+                      alt="Fachada Externa Sorria Bem Garavelo" 
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent text-white">
+                      <p class="font-bold text-sm text-white">Fachada Externa</p>
+                      <p class="text-xs text-brand-yellow/90">Avenida da Igualdade - Garavelo</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 2: Foto Ambiente 1 -->
+                <div class="swiper-slide">
+                  <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-100 border border-slate-200 flex items-center justify-center shadow-md hover:border-amber-400 transition-all duration-300">
+                    <img 
+                      src="./imagens/ambiente-1.jpg" 
+                      alt="Recepção e Balcão de Atendimento" 
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent text-white">
+                      <p class="font-bold text-sm text-white">Recepção Acolhedora</p>
+                      <p class="text-xs text-brand-yellow/90">Atendimento atencioso e humanizado</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 3: Foto Ambiente 2 -->
+                <div class="swiper-slide">
+                  <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-100 border border-slate-200 flex items-center justify-center shadow-md hover:border-amber-400 transition-all duration-300">
+                    <img 
+                      src="./imagens/ambiente-2.jpg" 
+                      alt="Sala de Espera Confortável" 
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent text-white">
+                      <p class="font-bold text-sm text-white">Sala de Espera</p>
+                      <p class="text-xs text-brand-yellow/90">Espaço climatizado e confortável</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 4: Foto Ambiente 3 -->
+                <div class="swiper-slide">
+                  <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-100 border border-slate-200 flex items-center justify-center shadow-md hover:border-amber-400 transition-all duration-300">
+                    <img 
+                      src="./imagens/ambiente-3.jpg" 
+                      alt="Sala de Raio-X Digital" 
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent text-white">
+                      <p class="font-bold text-sm text-white">Sala de Raio-X Digital</p>
+                      <p class="text-xs text-brand-yellow/90">Exames rápidos e precisos no próprio local</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 5: Foto Ambiente 4 -->
+                <div class="swiper-slide">
+                  <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-100 border border-slate-200 flex items-center justify-center shadow-md hover:border-amber-400 transition-all duration-300">
+                    <img 
+                      src="./imagens/ambiente-4.jpg" 
+                      alt="Consultório Odontológico Moderno" 
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent text-white">
+                      <p class="font-bold text-sm text-white">Consultório Moderno</p>
+                      <p class="text-xs text-brand-yellow/90">Equipamentos de alta tecnologia</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 6: Foto Ambiente 5 -->
+                <div class="swiper-slide">
+                  <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-100 border border-slate-200 flex items-center justify-center shadow-md hover:border-amber-400 transition-all duration-300">
+                    <img 
+                      src="./imagens/ambiente-5.jpg" 
+                      alt="Equipamentos e Diagnóstico" 
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent text-white">
+                      <p class="font-bold text-sm text-white">Precisão em Diagnósticos</p>
+                      <p class="text-xs text-brand-yellow/90">Ambiente seguro e esterilizado</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 7: Foto Ambiente 6 -->
+                <div class="swiper-slide">
+                  <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-100 border border-slate-200 flex items-center justify-center shadow-md hover:border-amber-400 transition-all duration-300">
+                    <img 
+                      src="./imagens/ambiente-6.jpg" 
+                      alt="Consultório Clínico Acolhedor" 
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent text-white">
+                      <p class="font-bold text-sm text-white">Atendimento Especializado</p>
+                      <p class="text-xs text-brand-yellow/90">Espaço pensado no seu bem-estar</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Slide 8: Foto Ambiente 7 -->
+                <div class="swiper-slide">
+                  <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-100 border border-slate-200 flex items-center justify-center shadow-md hover:border-amber-400 transition-all duration-300">
+                    <img 
+                      src="./imagens/ambiente-7.jpg" 
+                      alt="Estrutura Completa de Atendimento" 
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent text-white">
+                      <p class="font-bold text-sm text-white">Estrutura Completa</p>
+                      <p class="text-xs text-brand-yellow/90">Tudo para a sua saúde bucal em um só lugar</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navegação (Setas) -->
+            <div class="swiper-button-prev !hidden md:!flex !w-12 !h-12 !bg-white border !border-slate-200 !text-[#0F172A] hover:!bg-amber-400 hover:!text-brand-dark hover:!border-amber-400 rounded-full shadow-lg after:!hidden !left-0 -ml-6 transition-all duration-300 items-center justify-center cursor-pointer">
+              <i data-lucide="chevron-left" class="w-6 h-6 shrink-0"></i>
+            </div>
+            <div class="swiper-button-next !hidden md:!flex !w-12 !h-12 !bg-white border !border-slate-200 !text-[#0F172A] hover:!bg-amber-400 hover:!text-brand-dark hover:!border-amber-400 rounded-full shadow-lg after:!hidden !right-0 -mr-6 transition-all duration-300 items-center justify-center cursor-pointer">
+              <i data-lucide="chevron-right" class="w-6 h-6 shrink-0"></i>
+            </div>
+
+            <!-- Paginação (Bullets) -->
+            <div class="swiper-pagination !bottom-[-2rem]"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. SERVIÇOS/ESPECIALIDADES SECTION (Fundo Branco com Ícones Circulares em Amarelo) -->
+      <section id="servicos" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+            <span class="text-xs font-black uppercase tracking-wider text-amber-900 bg-amber-100 border border-amber-300/70 px-3.5 py-1.5 rounded-full w-max mb-4 block mx-auto">Nossas Especialidades</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight leading-tight mb-4 font-display">
+              Tratamentos especializados em <br />
+              <span class="text-amber-500 font-black">todas as áreas da odontologia</span>
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed font-normal">
+              Materiais de padrão ouro, diagnóstico por imagem no próprio local e cirurgiões-dentistas experientes para transformar o seu sorriso.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 items-stretch stagger-grid">
+            <!-- Especialidade 1: Clínico Geral -->
+            <div class="group bg-white rounded-3xl rounded-t-3xl p-7 border border-slate-200 border-t-[6px] border-t-brand-yellow shadow-lg shadow-slate-200/60 hover:shadow-2xl hover:border-brand-yellow hover:-translate-y-2 transition-all duration-300 flex flex-col h-full relative overflow-hidden reveal">
+              <div class="flex flex-col flex-grow">
+                <div class="flex items-center justify-between mb-5">
+                  <div class="w-14 h-14 rounded-full bg-brand-yellow text-brand-dark flex items-center justify-center shadow-md shadow-brand-yellow/30 group-hover:scale-110 transition-transform duration-300 shrink-0">
+                    <i data-lucide="stethoscope" class="w-6 h-6"></i>
+                  </div>
+                  <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider bg-slate-100 px-3 py-1 rounded-full">
+                    Prevenção & Saúde
+                  </span>
+                </div>
+                <h3 class="text-xl font-bold font-display text-brand-dark group-hover:text-amber-600 transition-colors">
+                  Clínico Geral
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed mt-3 font-normal">
+                  Prevenção, diagnóstico completo, restaurações estéticas, profilaxia (limpeza profunda) e tratamentos de canal para manter sua saúde bucal sempre em dia.
+                </p>
+                <div class="mt-5 pt-4 border-t border-slate-100 space-y-2 text-xs text-slate-500 font-medium">
+                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0"></i><span>Diagnóstico integrado</span></div>
+                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0"></i><span>Tratamento rápido e seguro</span></div>
+                </div>
+              </div>
+              <div class="mt-auto pt-6">
+                <a href="https://wa.me/556282790106?text=Olá! Quero agendar uma consulta para Clínico Geral na Sorria Bem Garavelo." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full px-5 py-3.5 rounded-xl font-bold text-sm bg-brand-yellow text-brand-dark hover:bg-amber-500 group-hover:bg-amber-500 group-hover:shadow-md transition-all duration-300 cursor-pointer shadow-sm">
+                  <span>Agendar Consulta</span>
+                  <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Especialidade 2: Odontopediatria -->
+            <div class="group bg-white rounded-3xl rounded-t-3xl p-7 border border-slate-200 border-t-[6px] border-t-brand-yellow shadow-lg shadow-slate-200/60 hover:shadow-2xl hover:border-brand-yellow hover:-translate-y-2 transition-all duration-300 flex flex-col h-full relative overflow-hidden reveal">
+              <div class="flex flex-col flex-grow">
+                <div class="flex items-center justify-between mb-5">
+                  <div class="w-14 h-14 rounded-full bg-brand-yellow text-brand-dark flex items-center justify-center shadow-md shadow-brand-yellow/30 group-hover:scale-110 transition-transform duration-300 shrink-0">
+                    <i data-lucide="smile" class="w-6 h-6"></i>
+                  </div>
+                  <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider bg-slate-100 px-3 py-1 rounded-full">
+                    Cuidado Infantil
+                  </span>
+                </div>
+                <h3 class="text-xl font-bold font-display text-brand-dark group-hover:text-amber-600 transition-colors">
+                  Odontopediatria
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed mt-3 font-normal">
+                  Cuidado lúdico, acolhedor e especializado para bebês, crianças e adolescentes. Criando memórias positivas e sorrisos saudáveis desde a primeira infância.
+                </p>
+                <div class="mt-5 pt-4 border-t border-slate-100 space-y-2 text-xs text-slate-500 font-medium">
+                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0"></i><span>Consultório infantil acolhedor</span></div>
+                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0"></i><span>Atendimento sem medo de dentista</span></div>
+                </div>
+              </div>
+              <div class="mt-auto pt-6">
+                <a href="https://wa.me/556282790106?text=Olá! Quero agendar uma consulta para Odontopediatria na Sorria Bem Garavelo." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full px-5 py-3.5 rounded-xl font-bold text-sm bg-brand-yellow text-brand-dark hover:bg-amber-500 group-hover:bg-amber-500 group-hover:shadow-md transition-all duration-300 cursor-pointer shadow-sm">
+                  <span>Agendar Consulta</span>
+                  <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Especialidade 3: Implantes Dentários -->
+            <div class="group bg-white rounded-3xl rounded-t-3xl p-7 border border-slate-200 border-t-[6px] border-t-brand-yellow shadow-lg shadow-slate-200/60 hover:shadow-2xl hover:border-brand-yellow hover:-translate-y-2 transition-all duration-300 flex flex-col h-full relative overflow-hidden reveal">
+              <div class="flex flex-col flex-grow">
+                <div class="flex items-center justify-between mb-5">
+                  <div class="w-14 h-14 rounded-full bg-brand-yellow text-brand-dark flex items-center justify-center shadow-md shadow-brand-yellow/30 group-hover:scale-110 transition-transform duration-300 shrink-0">
+                    <i data-lucide="shield-plus" class="w-6 h-6"></i>
+                  </div>
+                  <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider bg-slate-100 px-3 py-1 rounded-full">
+                    Reabilitação Oral
+                  </span>
+                </div>
+                <h3 class="text-xl font-bold font-display text-brand-dark group-hover:text-amber-600 transition-colors">
+                  Implantes Dentários
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed mt-3 font-normal">
+                  Tecnologia segura para repor dentes perdidos com máxima naturalidade e estabilidade, recuperando sua mastigação e confiança plena ao sorrir.
+                </p>
+                <div class="mt-5 pt-4 border-t border-slate-100 space-y-2 text-xs text-slate-500 font-medium">
+                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0"></i><span>Materiais de padrão ouro</span></div>
+                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0"></i><span>Recuperação mastigatória total</span></div>
+                </div>
+              </div>
+              <div class="mt-auto pt-6">
+                <a href="https://wa.me/556282790106?text=Olá! Quero agendar uma consulta para Implantes Dentários na Sorria Bem Garavelo." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full px-5 py-3.5 rounded-xl font-bold text-sm bg-brand-yellow text-brand-dark hover:bg-amber-500 group-hover:bg-amber-500 group-hover:shadow-md transition-all duration-300 cursor-pointer shadow-sm">
+                  <span>Agendar Consulta</span>
+                  <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Especialidade 4: Ortodontia & Aparelhos -->
+            <div class="group bg-white rounded-3xl rounded-t-3xl p-7 border border-slate-200 border-t-[6px] border-t-brand-yellow shadow-lg shadow-slate-200/60 hover:shadow-2xl hover:border-brand-yellow hover:-translate-y-2 transition-all duration-300 flex flex-col h-full relative overflow-hidden reveal">
+              <div class="flex flex-col flex-grow">
+                <div class="flex items-center justify-between mb-5">
+                  <div class="w-14 h-14 rounded-full bg-brand-yellow text-brand-dark flex items-center justify-center shadow-md shadow-brand-yellow/30 group-hover:scale-110 transition-transform duration-300 shrink-0">
+                    <i data-lucide="sliders" class="w-6 h-6"></i>
+                  </div>
+                  <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider bg-slate-100 px-3 py-1 rounded-full">
+                    Alinhamento Dental
+                  </span>
+                </div>
+                <h3 class="text-xl font-bold font-display text-brand-dark group-hover:text-amber-600 transition-colors">
+                  Ortodontia & Aparelhos
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed mt-3 font-normal">
+                  Aparelhos modernos metálicos, estéticos (safira) e autoligáveis. Correção eficaz e personalizada para um alinhamento perfeito em qualquer idade.
+                </p>
+                <div class="mt-5 pt-4 border-t border-slate-100 space-y-2 text-xs text-slate-500 font-medium">
+                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0"></i><span>Planejamento ortodôntico 3D</span></div>
+                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0"></i><span>Opções metálicas e estéticas</span></div>
+                </div>
+              </div>
+              <div class="mt-auto pt-6">
+                <a href="https://wa.me/556282790106?text=Olá! Quero agendar uma consulta para Ortodontia na Sorria Bem Garavelo." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full px-5 py-3.5 rounded-xl font-bold text-sm bg-brand-yellow text-brand-dark hover:bg-amber-500 group-hover:bg-amber-500 group-hover:shadow-md transition-all duration-300 cursor-pointer shadow-sm">
+                  <span>Agendar Consulta</span>
+                  <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Especialidade 5: Alinhadores Invisíveis -->
+            <div class="group bg-white rounded-3xl rounded-t-3xl p-7 border border-slate-200 border-t-[6px] border-t-brand-yellow shadow-lg shadow-slate-200/60 hover:shadow-2xl hover:border-brand-yellow hover:-translate-y-2 transition-all duration-300 flex flex-col h-full relative overflow-hidden reveal">
+              <div class="flex flex-col flex-grow">
+                <div class="flex items-center justify-between mb-5">
+                  <div class="w-14 h-14 rounded-full bg-brand-yellow text-brand-dark flex items-center justify-center shadow-md shadow-brand-yellow/30 group-hover:scale-110 transition-transform duration-300 shrink-0">
+                    <i data-lucide="sparkles" class="w-6 h-6"></i>
+                  </div>
+                  <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider bg-slate-100 px-3 py-1 rounded-full">
+                    Tecnologia Invisível
+                  </span>
+                </div>
+                <h3 class="text-xl font-bold font-display text-brand-dark group-hover:text-amber-600 transition-colors">
+                  Alinhadores Invisíveis
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed mt-3 font-normal">
+                  Alinhadores transparentes sob medida. Discrição total, conforto e facilidade para remover durante refeições, planejados com tecnologia digital 3D.
+                </p>
+                <div class="mt-5 pt-4 border-t border-slate-100 space-y-2 text-xs text-slate-500 font-medium">
+                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0"></i><span>Removíveis e imperceptíveis</span></div>
+                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0"></i><span>Resultados previsíveis e rápidos</span></div>
+                </div>
+              </div>
+              <div class="mt-auto pt-6">
+                <a href="https://wa.me/556282790106?text=Olá! Quero agendar uma consulta para Alinhadores Invisíveis na Sorria Bem Garavelo." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full px-5 py-3.5 rounded-xl font-bold text-sm bg-brand-yellow text-brand-dark hover:bg-amber-500 group-hover:bg-amber-500 group-hover:shadow-md transition-all duration-300 cursor-pointer shadow-sm">
+                  <span>Agendar Consulta</span>
+                  <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Especialidade 6: Estética & Harmonização Facial -->
+            <div class="group bg-white rounded-3xl rounded-t-3xl p-7 border border-slate-200 border-t-[6px] border-t-brand-yellow shadow-lg shadow-slate-200/60 hover:shadow-2xl hover:border-brand-yellow hover:-translate-y-2 transition-all duration-300 flex flex-col h-full relative overflow-hidden reveal">
+              <div class="flex flex-col flex-grow">
+                <div class="flex items-center justify-between mb-5">
+                  <div class="w-14 h-14 rounded-full bg-brand-yellow text-brand-dark flex items-center justify-center shadow-md shadow-brand-yellow/30 group-hover:scale-110 transition-transform duration-300 shrink-0">
+                    <i data-lucide="wand-2" class="w-6 h-6"></i>
+                  </div>
+                  <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider bg-slate-100 px-3 py-1 rounded-full">
+                    Estética & Simetria
+                  </span>
+                </div>
+                <h3 class="text-xl font-bold font-display text-brand-dark group-hover:text-amber-600 transition-colors">
+                  Estética & Harmonização
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed mt-3 font-normal">
+                  Clareamento dental seguro, facetas, resinas estéticas e procedimentos de harmonização facial para valorizar o contorno e a simetria do seu rosto.
+                </p>
+                <div class="mt-5 pt-4 border-t border-slate-100 space-y-2 text-xs text-slate-500 font-medium">
+                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0"></i><span>Clareamento a laser e caseiro</span></div>
+                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 shrink-0"></i><span>Facetas e resinas de alto padrão</span></div>
+                </div>
+              </div>
+              <div class="mt-auto pt-6">
+                <a href="https://wa.me/556282790106?text=Olá! Quero agendar uma consulta para Estética e Harmonização na Sorria Bem Garavelo." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full px-5 py-3.5 rounded-xl font-bold text-sm bg-brand-yellow text-brand-dark hover:bg-amber-500 group-hover:bg-amber-500 group-hover:shadow-md transition-all duration-300 cursor-pointer shadow-sm">
+                  <span>Agendar Consulta</span>
+                  <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Banner de Destaque Raio-X Panorâmico no Local -->
+          <div class="mt-14 rounded-3xl bg-[#0F172A] p-6 sm:p-8 text-white shadow-xl relative overflow-hidden border border-slate-800 reveal">
+            <!-- Glow sutil de fundo -->
+            <div class="absolute -right-16 -top-16 w-64 h-64 bg-brand-yellow/15 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-6 text-center lg:text-left">
+              <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-5">
+                <div class="w-14 h-14 rounded-2xl bg-brand-yellow text-[#0F172A] flex items-center justify-center shrink-0 shadow-lg shadow-brand-yellow/20">
+                  <i data-lucide="scan" class="w-7 h-7 stroke-[2.5]"></i>
+                </div>
+                <div>
+                  <span class="inline-block text-[11px] font-black uppercase tracking-widest text-brand-yellow bg-amber-400/15 border border-amber-400/30 px-3 py-0.5 rounded-full mb-1">
+                    Tecnologia Integrada no Local
+                  </span>
+                  <h3 class="text-lg sm:text-xl lg:text-2xl font-black text-white font-display tracking-tight">
+                    Diagnóstico Completo com Raio-X Panorâmico em poucos minutos, <span class="text-brand-yellow">sem sair da clínica.</span>
+                  </h3>
+                  <p class="text-xs sm:text-sm text-slate-300 mt-1 font-normal max-w-2xl">
+                    Mais agilidade, conforto e precisão no seu plano de tratamento sem precisar se deslocar para clínicas de imagem externas.
+                  </p>
+                </div>
+              </div>
+              <div class="shrink-0 w-full sm:w-auto">
+                <a
+                  href="https://wa.me/556282790106?text=Olá! Gostaria de agendar uma avaliação com Raio-X Panorâmico na Sorria Bem Garavelo."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center justify-center w-full sm:w-auto px-6 py-3.5 rounded-xl bg-brand-yellow text-[#0F172A] hover:bg-amber-400 font-black text-sm shadow-md transition-all duration-300 hover:scale-105 cursor-pointer btn-tactile gap-2"
+                >
+                  <i data-lucide="calendar" class="w-4 h-4"></i>
+                  <span>Agendar Avaliação</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. ANTES E DEPOIS SECTION -->
+      <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="relative flex flex-col justify-center items-center reveal">
+            
+            <!-- Slider Frame -->
+            <div id="before-after-slider" class="relative w-full max-w-3xl rounded-3xl overflow-hidden shadow-xl border-8 border-slate-100 bg-white">
+              <div class="relative h-[280px] sm:h-[340px] md:h-[420px] w-full select-none overflow-hidden">
+                
+                <!-- Imagem Antes -->
+                <div class="absolute inset-0 w-full h-full">
+                  <img
+                    id="slider-before-img"
+                    src="./imagens/antes-implante.jpg"
+                    alt="Antes do tratamento odontológico"
+                    class="w-full h-full object-cover"
+                  />
+                  <div id="slider-before-badge" class="absolute bottom-4 left-4 z-10 bg-slate-900/80 backdrop-blur-sm text-white px-3 py-1 rounded-lg text-xs font-extrabold uppercase tracking-wide">
+                    Antes (Implante)
+                  </div>
+                </div>
+
+                <!-- Imagem Depois -->
+                <div id="hero-slider-after-layer" class="absolute inset-0 w-full h-full overflow-hidden transition-all duration-75" style="clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%)">
+                  <img
+                    id="slider-after-img"
+                    src="./imagens/depois-implante.jpg"
+                    alt="Após tratamento odontológico"
+                    class="absolute inset-0 w-full h-[280px] sm:h-[340px] md:h-[420px] object-cover"
+                  />
+                  <div class="absolute bottom-4 right-4 z-10 bg-brand-yellow text-brand-dark px-3.5 py-1 rounded-lg text-xs font-black uppercase tracking-wide shadow-md">
+                    Depois Sorria Bem
+                  </div>
+                </div>
+
+                <!-- Slider linha vertical e alça -->
+                <div id="hero-slider-handle" class="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize z-[25] flex items-center justify-center" style="left: 50%">
+                  <div class="w-8 h-8 bg-brand-yellow text-brand-dark shadow-xl rounded-full border-2 border-white flex items-center justify-center shrink-0">
+                    <svg class="w-4 h-4 text-brand-dark fill-current" viewBox="0 0 24 24">
+                      <path d="M7 10l-5 5 5 5v-10zm10 0l5 5-5 5v-10z" />
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Range input invisível -->
+                <input id="hero-slider-input" type="range" min="0" max="100" value="50" class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30" aria-label="Controle de Simulação" />
+              </div>
+
+              <!-- Footer do Card Slider -->
+              <div class="p-6 bg-gradient-to-b from-slate-50 to-white border-t border-slate-100">
+                <h3 class="text-lg sm:text-xl font-black text-[#0F172A] tracking-tight leading-snug">
+                  Transformações que renovam sorrisos e vidas.
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-2 font-normal">
+                  Tratamentos modernos, atendimento acolhedor e resultados que elevam sua autoconfiança e qualidade de vida.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-between mt-5 pt-4 border-t border-slate-200/60 gap-4 text-xs font-sans">
+                  <div class="flex items-center text-slate-600 font-semibold">
+                    <i data-lucide="sparkles" class="w-4 h-4 text-amber-500 mr-1.5 shrink-0 animate-pulse"></i>
+                    <span>Seu sorriso na melhor versão</span>
+                  </div>
+                  <a
+                    href="https://wa.me/556282790106?text=Olá! Vi o simulador de antes/depois no site e gostaria de agendar uma consulta na Sorria Bem Garavelo."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="w-full sm:w-auto inline-flex items-center justify-center px-5 py-3 rounded-xl bg-brand-yellow text-brand-dark hover:bg-amber-400 hover:shadow-lg hover:shadow-brand-yellow/40 font-black text-xs uppercase tracking-wide shadow-sm transition-all duration-300 gap-1.5 cursor-pointer text-center"
+                  >
+                    <span>Agendar Avaliação</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 shrink-0"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 text-[11px] font-semibold text-slate-500 bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-full flex items-center space-x-1.5 shadow-xs">
+              <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+              </span>
+              <span>Arraste a linha central horizontalmente para comparar o antes e depois</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. QUEM SOMOS SECTION -->
+      <section id="sobre" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <!-- Texto Institucional Centralizado -->
+          <div class="max-w-4xl mx-auto text-center mb-14 reveal">
+            <span class="text-xs font-black uppercase tracking-wider text-amber-900 bg-amber-100 border border-amber-300/70 px-4 py-1.5 rounded-full w-max mx-auto mb-4 inline-block font-sans">Quem Somos</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight leading-tight mb-6 font-display">
+              Odontologia humanizada pensada para <br class="hidden sm:inline" />
+              <span class="underline decoration-brand-yellow decoration-4 underline-offset-4">toda a sua família</span>.
+            </h2>
+            <div class="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed font-normal max-w-3xl mx-auto">
+              <p>
+                Na <strong class="text-[#0F172A]">Sorria Bem Garavelo</strong>, acreditamos que cuidar do sorriso deve ser uma experiência acolhedora, transparente e acessível. Nossa clínica nasceu independente com a missão de transformar vidas através da odontologia humanizada, aliando tecnologia de última geração a um cuidado genuíno com cada paciente.
+              </p>
+              <p>
+                Localizada na <strong class="text-[#0F172A]">Avenida da Igualdade em Aparecida de Goiânia</strong>, nossa unidade reúne uma estrutura moderna, climatizada e equipada com <strong class="text-[#0F172A]">raio-X digital panorâmico no próprio local</strong>. Cada detalhe foi pensado para que você se sinta seguro e confortável, porque sabemos que <strong class="text-[#0F172A]">seu sorriso transforma sua vida</strong>.
+              </p>
+            </div>
+          </div>
+
+              <!-- Barra de Indicadores com Contadores Animados -->
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 w-full mb-8 stagger-grid">
+                <div class="bg-white p-5 rounded-2xl border border-slate-200/90 shadow-sm text-center reveal">
+                  <div class="text-3xl sm:text-4xl font-black text-brand-dark font-display mb-1">
+                    <span data-counter-target="15000" data-counter-prefix="+" data-counter-suffix="">+15.000</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-wider text-slate-500">Pacientes Atendidos</p>
+                </div>
+                <div class="bg-white p-5 rounded-2xl border border-slate-200/90 shadow-sm text-center reveal">
+                  <div class="text-3xl sm:text-4xl font-black text-brand-dark font-display mb-1">
+                    <span data-counter-target="100" data-counter-prefix="" data-counter-suffix="%">100%</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-wider text-slate-500">Odontologia Humanizada</p>
+                </div>
+                <div class="bg-white p-5 rounded-2xl border border-slate-200/90 shadow-sm text-center reveal">
+                  <div class="text-3xl sm:text-4xl font-black text-brand-dark font-display mb-1">
+                    <span data-counter-target="12" data-counter-prefix="+" data-counter-suffix=" Anos">+12 Anos</span>
+                  </div>
+                  <p class="text-xs font-bold uppercase tracking-wider text-slate-500">Cuidando de Sorrisos</p>
+                </div>
+              </div>
+
+              <!-- Grid de Pilares em Fundo Claro -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 bg-white p-6 rounded-3xl border border-slate-200 w-full text-left shadow-sm stagger-grid">
+                <div class="flex space-x-3.5 items-start group bg-slate-50 p-4 rounded-2xl transition-all duration-300 hover:shadow-md border border-slate-200/80 hover:border-amber-300 reveal">
+                  <div class="p-2.5 bg-amber-50 text-amber-600 border border-amber-200 rounded-xl shadow-xs shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <i data-lucide="shield-check" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-black text-[#0F172A] mb-1">Segurança & Rigor</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">Padrões rigorosos de biossegurança, esterilização contínua e equipamentos de alta precisão.</p>
+                  </div>
+                </div>
+
+                <div class="flex space-x-3.5 items-start group bg-slate-50 p-4 rounded-2xl transition-all duration-300 hover:shadow-md border border-slate-200/80 hover:border-amber-300 reveal">
+                  <div class="p-2.5 bg-amber-50 text-amber-600 border border-amber-200 rounded-xl shadow-xs shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <i data-lucide="award" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-black text-[#0F172A] mb-1">Padrão de Qualidade</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">Materiais certificados, próteses de alta durabilidade e planejamento digital personalizado.</p>
+                  </div>
+                </div>
+
+                <div class="flex space-x-3.5 items-start group bg-slate-50 p-4 rounded-2xl transition-all duration-300 hover:shadow-md border border-slate-200/80 hover:border-amber-300 reveal">
+                  <div class="p-2.5 bg-amber-50 text-amber-600 border border-amber-200 rounded-xl shadow-xs shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <i data-lucide="heart" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-black text-[#0F172A] mb-1">Humanização Real</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">Tratamento empático, acolhedor e atencioso, projetado para eliminar o medo de dentista.</p>
+                  </div>
+                </div>
+
+                <div class="flex space-x-3.5 items-start group bg-slate-50 p-4 rounded-2xl transition-all duration-300 hover:shadow-md border border-slate-200/80 hover:border-amber-300 reveal">
+                  <div class="p-2.5 bg-amber-50 text-amber-600 border border-amber-200 rounded-xl shadow-xs shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <i data-lucide="sparkles" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-black text-[#0F172A] mb-1">Solução Completa</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">Desde a prevenção e limpeza até reabilitações com implantes, ortodontia e estética no mesmo local.</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </section>
+
+      <!-- 4. DIFERENCIAIS SECTION (Fundo bg-slate-100 com Efeito Sanduíche e Cards Brancos) -->
+      <section id="diferenciais" class="py-20 bg-slate-100 relative overflow-hidden">
+        <!-- Glows de profundidade -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-amber-100/40 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-slate-200/50 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            
+            <!-- Lado Esquerdo (Texto com Scroll Reveal) -->
+            <div class="lg:col-span-5 flex flex-col justify-center reveal">
+              <span class="text-xs font-black uppercase tracking-wider text-amber-900 bg-amber-100 border border-amber-300/70 px-3.5 py-1.5 rounded-full w-max mb-4 block">Por que escolher a Sorria Bem?</span>
+              <h2 class="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight leading-tight mb-5 font-display">
+                A estrutura completa e acolhedora <br />
+                <span class="text-amber-500 font-black">
+                  que o seu sorriso merece
+                </span>
+              </h2>
+              <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6 font-normal">
+                Nossa clínica na Avenida da Igualdade, no Setor Garavelo, conta com diferenciais pensados minuciosamente para oferecer agilidade, conforto absoluto e resultados encantadores.
+              </p>
+            </div>
+
+            <!-- Lado Direito: Cards Brancos em Cascata (stagger-grid) -->
+            <div class="lg:col-span-7">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 stagger-grid">
+                <!-- Card 1 -->
+                <div class="p-7 rounded-3xl bg-white border border-slate-200/90 hover:border-amber-400 hover:-translate-y-1 hover:shadow-xl shadow-md shadow-slate-200/60 transition-all duration-300 relative group overflow-hidden reveal">
+                  <div class="mb-4 inline-flex p-3 bg-amber-50 text-amber-600 border border-amber-200 rounded-2xl group-hover:scale-110 group-hover:bg-brand-yellow group-hover:text-brand-dark transition-all duration-300 shadow-xs">
+                    <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                  </div>
+                  <h4 class="text-base font-extrabold text-[#0F172A] mb-2 leading-tight group-hover:text-amber-600 transition-colors font-display">Profissionais Especialistas</h4>
+                  <p class="text-xs text-slate-600 leading-relaxed font-medium">Corpo clínico de cirurgiões-dentistas experientes e dedicados à excelência clínica.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-7 rounded-3xl bg-white border border-slate-200/90 hover:border-amber-400 hover:-translate-y-1 hover:shadow-xl shadow-md shadow-slate-200/60 transition-all duration-300 relative group overflow-hidden reveal">
+                  <div class="mb-4 inline-flex p-3 bg-amber-50 text-amber-600 border border-amber-200 rounded-2xl group-hover:scale-110 group-hover:bg-brand-yellow group-hover:text-brand-dark transition-all duration-300 shadow-xs">
+                    <i data-lucide="cpu" class="w-5 h-5"></i>
+                  </div>
+                  <h4 class="text-base font-extrabold text-[#0F172A] mb-2 leading-tight group-hover:text-amber-600 transition-colors font-display">Tecnologia & Raio-X Digital</h4>
+                  <p class="text-xs text-slate-600 leading-relaxed font-medium">Exames de raio-X realizados na própria clínica, agilizando seu diagnóstico sem deslocamentos.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-7 rounded-3xl bg-white border border-slate-200/90 hover:border-amber-400 hover:-translate-y-1 hover:shadow-xl shadow-md shadow-slate-200/60 transition-all duration-300 relative group overflow-hidden reveal">
+                  <div class="mb-4 inline-flex p-3 bg-amber-50 text-amber-600 border border-amber-200 rounded-2xl group-hover:scale-110 group-hover:bg-brand-yellow group-hover:text-brand-dark transition-all duration-300 shadow-xs">
+                    <i data-lucide="smile" class="w-5 h-5"></i>
+                  </div>
+                  <h4 class="text-base font-extrabold text-[#0F172A] mb-2 leading-tight group-hover:text-amber-600 transition-colors font-display">Atendimento Humanizado</h4>
+                  <p class="text-xs text-slate-600 leading-relaxed font-medium">Cuidado acolhedor desde a recepção, com atenção integral e escuta ativa de cada paciente.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="p-7 rounded-3xl bg-white border border-slate-200/90 hover:border-amber-400 hover:-translate-y-1 hover:shadow-xl shadow-md shadow-slate-200/60 transition-all duration-300 relative group overflow-hidden reveal">
+                  <div class="mb-4 inline-flex p-3 bg-amber-50 text-amber-600 border border-amber-200 rounded-2xl group-hover:scale-110 group-hover:bg-brand-yellow group-hover:text-brand-dark transition-all duration-300 shadow-xs">
+                    <i data-lucide="map-pin" class="w-5 h-5"></i>
+                  </div>
+                  <h4 class="text-base font-extrabold text-[#0F172A] mb-2 leading-tight group-hover:text-amber-600 transition-colors font-display">Estrutura & Facilidade</h4>
+                  <p class="text-xs text-slate-600 leading-relaxed font-medium">Instalações confortáveis na Avenida da Igualdade, com estacionamento e acessibilidade total.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. PERGUNTAS FREQUENTES (FAQ) -->
+      <section id="faq" class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+            <span class="text-sm font-extrabold uppercase tracking-widest text-amber-900 bg-amber-100 border border-amber-300/70 px-4 py-1.5 rounded-full mb-3 block w-max mx-auto font-sans">Dúvidas Frequentes</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-[#0F172A] tracking-tight leading-tight mb-4 font-display">
+              Perguntas Comuns <br />
+              <span class="text-[#0F172A] font-black">sobre nossos atendimentos</span>
+            </h2>
+            <p class="text-slate-500 text-sm sm:text-base leading-relaxed font-normal">Tire suas dúvidas sobre consultas, exames, facilidades de pagamento e segurança para cuidar do seu sorriso com total tranquilidade.</p>
+          </div>
+
+          <!-- Accordion list -->
+          <div class="space-y-4 stagger-grid">
+            <!-- FAQ 1 -->
+            <div class="faq-item bg-white rounded-2xl border border-slate-200/80 transition-all duration-300 overflow-hidden hover:border-amber-400 shadow-xs reveal">
+              <button class="faq-btn w-full text-left py-5 px-6 sm:px-8 flex items-center justify-between gap-4 select-none focus:outline-none cursor-pointer">
+                <span class="text-sm sm:text-base font-bold text-[#0F172A] flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-amber-500 shrink-0"></i>Como agendo minha primeira avaliação na Sorria Bem Garavelo?</span>
+                <span class="faq-icon p-1.5 rounded-lg bg-slate-100 text-slate-500 transition-all"><i data-lucide="plus" class="w-4 h-4"></i></span>
+              </button>
+              <div class="faq-content hidden px-6 sm:px-8 pb-6 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-100 pt-4 bg-slate-50/40">
+                É muito simples! Basta clicar em qualquer botão de agendamento em nosso site para conversar diretamente com nossa equipe pelo WhatsApp ou ligar no número (62) 8279-0106. Agendamos o seu horário em poucos minutos para o dia e hora mais convenientes para você.
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item bg-white rounded-2xl border border-slate-200/80 transition-all duration-300 overflow-hidden hover:border-amber-400 shadow-xs reveal">
+              <button class="faq-btn w-full text-left py-5 px-6 sm:px-8 flex items-center justify-between gap-4 select-none focus:outline-none cursor-pointer">
+                <span class="text-sm sm:text-base font-bold text-[#0F172A] flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-amber-500 shrink-0"></i>Quais são as formas de pagamento aceitas?</span>
+                <span class="faq-icon p-1.5 rounded-lg bg-slate-100 text-slate-500 transition-all"><i data-lucide="plus" class="w-4 h-4"></i></span>
+              </button>
+              <div class="faq-content hidden px-6 sm:px-8 pb-6 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-100 pt-4 bg-slate-50/40">
+                Facilitamos as condições para que você possa cuidar da sua saúde bucal sem preocupações. Aceitamos cartões de crédito (com possibilidade de parcelamento facilitado), Pix, cartão de débito e dinheiro. Temos opções e condições personalizadas para tratamentos ortodônticos, implantes e reabilitações completas.
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item bg-white rounded-2xl border border-slate-200/80 transition-all duration-300 overflow-hidden hover:border-amber-400 shadow-xs reveal">
+              <button class="faq-btn w-full text-left py-5 px-6 sm:px-8 flex items-center justify-between gap-4 select-none focus:outline-none cursor-pointer">
+                <span class="text-sm sm:text-base font-bold text-[#0F172A] flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-amber-500 shrink-0"></i>A clínica faz exames de raio-X/diagnósticos na hora?</span>
+                <span class="faq-icon p-1.5 rounded-lg bg-slate-100 text-slate-500 transition-all"><i data-lucide="plus" class="w-4 h-4"></i></span>
+              </button>
+              <div class="faq-content hidden px-6 sm:px-8 pb-6 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-100 pt-4 bg-slate-50/40">
+                Sim! A Sorria Bem Garavelo é equipada com raio-X digital em sua própria estrutura física. Isso significa que você não precisa se deslocar para outras clínicas de radiologia para iniciar o planejamento do seu tratamento. Realizamos seu diagnóstico com agilidade, comodidade e precisão já na consulta.
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item bg-white rounded-2xl border border-slate-200/80 transition-all duration-300 overflow-hidden hover:border-amber-400 shadow-xs reveal">
+              <button class="faq-btn w-full text-left py-5 px-6 sm:px-8 flex items-center justify-between gap-4 select-none focus:outline-none cursor-pointer">
+                <span class="text-sm sm:text-base font-bold text-[#0F172A] flex items-center gap-3"><i data-lucide="help-circle" class="w-5 h-5 text-amber-500 shrink-0"></i>O clareamento dental causa sensibilidade ou prejudica o esmalte?</span>
+                <span class="faq-icon p-1.5 rounded-lg bg-slate-100 text-slate-500 transition-all"><i data-lucide="plus" class="w-4 h-4"></i></span>
+              </button>
+              <div class="faq-content hidden px-6 sm:px-8 pb-6 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-100 pt-4 bg-slate-50/40">
+                Não! Utilizamos géis clareadores certificados com pH equilibrado e protocolos dessensibilizantes modernos que preservam a integridade dos dentes e protegem a gengiva. Seus dentes ficarão mais claros com segurança e conforto.
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom trigger help card -->
+          <div class="mt-12 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 text-center flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xs reveal">
+            <div class="flex items-center space-x-4 text-left">
+              <div class="p-3 bg-amber-50 rounded-2xl text-amber-600 border border-amber-200/60 shrink-0">
+                <i data-lucide="message-square" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-extrabold text-[#0F172A] uppercase tracking-wider">Ainda tem alguma dúvida?</h4>
+                <p class="text-slate-500 text-xs sm:text-sm mt-0.5 font-normal">Nossa equipe de atendimento está pronta para conversar diretamente com você.</p>
+              </div>
+            </div>
+            <a href="https://wa.me/556282790106?text=Olá! Estava lendo as dúvidas frequentes no site e gostaria de falar com vocês sobre uma dúvida específica." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-brand-yellow text-brand-dark font-black text-sm hover:bg-amber-400 hover:shadow-lg hover:shadow-brand-yellow/40 transition shadow-sm hover:shadow cursor-pointer">
+              Tire suas dúvidas no WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. CONTATO & LOCALIZAÇÃO COM MAPA EMBEDADO -->
+      <section id="contato" class="py-20 bg-slate-50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
+            
+            <!-- Coluna Esquerda: Informações e Canais de Contato (7 colunas) -->
+            <div class="lg:col-span-7 flex flex-col justify-between space-y-7 reveal">
+              <div>
+                <span class="text-xs font-black uppercase tracking-wider text-amber-900 bg-amber-100 border border-amber-300/70 px-3.5 py-1.5 rounded-full w-max mb-4 block">Canais de Atendimento</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-[#0F172A] tracking-tight leading-tight font-display">
+                  Estamos prontos para <br />
+                  <span class="text-[#0F172A]">receber você de braços abertos</span>
+                </h2>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed mt-4 font-normal">
+                  Fale diretamente com nossa atenciosa equipe de agendamentos. Evite filas e garanta o melhor horário para sua primeira avaliação.
+                </p>
+              </div>
+
+              <!-- Detalhes de contato em cartões brancos com bordas sutis e ícones amarelos -->
+              <div class="space-y-4">
+                <!-- Cartão Telefone/WhatsApp -->
+                <div class="flex items-center space-x-4 bg-white p-5 rounded-2xl border border-slate-100 shadow-sm transition-all hover:border-amber-300">
+                  <div class="w-12 h-12 rounded-xl bg-brand-yellow text-brand-dark flex items-center justify-center shrink-0 shadow-xs">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-xs font-extrabold uppercase tracking-wider text-slate-400">Ligamos pra você / WhatsApp</h4>
+                    <p class="text-lg font-bold text-[#0F172A] mt-0.5" id="clinic-phone">+55 62 8279-0106</p>
+                  </div>
+                </div>
+
+                <!-- Cartão Horário de Funcionamento (sem bordas entre dias, alinhado com flexbox) -->
+                <div class="flex items-start space-x-4 bg-white p-5 rounded-2xl border border-slate-100 shadow-sm transition-all hover:border-amber-300">
+                  <div class="w-12 h-12 rounded-xl bg-brand-yellow text-brand-dark flex items-center justify-center shrink-0 shadow-xs mt-0.5">
+                    <i data-lucide="clock" class="w-5 h-5"></i>
+                  </div>
+                  <div class="w-full text-xs leading-relaxed">
+                    <h4 class="text-xs font-extrabold uppercase tracking-wider text-slate-400 mb-2.5">Horário de Funcionamento</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5">
+                      <div class="flex items-center justify-between"><span class="text-slate-700 font-semibold">Segunda-feira:</span><span class="text-slate-500 font-medium">08:00–19:00</span></div>
+                      <div class="flex items-center justify-between"><span class="text-slate-700 font-semibold">Terça-feira:</span><span class="text-slate-500 font-medium">08:00–19:00</span></div>
+                      <div class="flex items-center justify-between"><span class="text-slate-700 font-semibold">Quarta-feira:</span><span class="text-slate-500 font-medium">08:00–19:00</span></div>
+                      <div class="flex items-center justify-between"><span class="text-slate-700 font-semibold">Quinta-feira:</span><span class="text-slate-500 font-medium">08:00–19:00</span></div>
+                      <div class="flex items-center justify-between"><span class="text-slate-700 font-semibold">Sexta-feira:</span><span class="text-slate-500 font-medium">08:00–19:00</span></div>
+                      <div class="flex items-center justify-between"><span class="text-slate-700 font-semibold">Sábado:</span><span class="text-slate-500 font-medium">08:00–13:00</span></div>
+                      <div class="flex items-center justify-between"><span class="text-slate-700 font-semibold">Domingo:</span><span class="text-slate-400 font-medium">Fechado</span></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Cartão Localização Física com botões alinhados de mesma altura -->
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 bg-white p-5 rounded-2xl border border-slate-100 shadow-sm transition-all hover:border-amber-300">
+                  <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-yellow text-brand-dark flex items-center justify-center shrink-0 shadow-xs">
+                      <i data-lucide="map-pin" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                      <h4 class="text-xs font-extrabold uppercase tracking-wider text-slate-400">Localização Física</h4>
+                      <p class="text-sm font-semibold text-slate-800 mt-1 max-w-xs leading-relaxed" id="clinic-address-text">
+                        QD 114, LT 20A, Avenida da Igualdade, Aparecida de Goiânia GO, 74930-530, Brasil
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div class="flex sm:flex-col gap-2.5 justify-end shrink-0">
+                    <button id="copy-address-btn" class="h-10 px-4 inline-flex items-center justify-center text-xs font-bold text-[#0F172A] bg-slate-50 border border-slate-200 rounded-xl hover:bg-slate-100 transition-colors cursor-pointer shadow-2xs">
+                      <i data-lucide="copy" class="w-4 h-4 mr-1.5"></i>
+                      <span id="copy-btn-text">Copiar Endereço</span>
+                    </button>
+                    <a href="https://maps.app.goo.gl/1mj4SZGZYQGaWLKn6" target="_blank" rel="noopener noreferrer" class="h-10 px-4 inline-flex items-center justify-center text-xs font-black bg-brand-yellow text-brand-dark rounded-xl hover:bg-amber-400 hover:shadow-md hover:shadow-brand-yellow/40 transition cursor-pointer shadow-xs">
+                      <i data-lucide="navigation-2" class="w-4 h-4 mr-1.5 fill-brand-dark"></i>
+                      Como Chegar
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Coluna Direita: Card de Agendamento em Navy Escuro (5 colunas) -->
+            <div class="lg:col-span-5 reveal">
+              <div class="rounded-3xl bg-[#0F172A] p-6 sm:p-8 text-white shadow-xl flex flex-col justify-between h-full overflow-hidden border border-slate-800 relative">
+                <!-- Padrão geométrico sutil de fundo e glow suave -->
+                <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
+                <div class="absolute -top-16 -right-16 w-56 h-56 bg-brand-yellow/10 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="absolute -bottom-16 -left-16 w-56 h-56 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="relative z-10">
+                  <span class="inline-flex items-center px-3.5 py-1 rounded-full bg-brand-yellow text-brand-dark text-xs font-black tracking-wider uppercase mb-5 shadow-2xs">
+                    Agende sua primeira avaliação
+                  </span>
+                  <h3 class="text-2xl sm:text-3xl font-black tracking-tight leading-tight mb-4 font-display text-white">
+                    Pronto para devolver a alegria ao seu <span class="text-brand-yellow">sorriso</span>?
+                  </h3>
+                  <p class="text-slate-300 text-sm leading-relaxed mb-6 font-normal">
+                    Clique no botão abaixo para conversar conosco no WhatsApp. Agendamos sua consulta sem complicação e com total atenção às suas necessidades.
+                  </p>
+                </div>
+
+                <div class="relative z-10 pt-2">
+                  <a href="https://wa.me/556282790106?text=Olá! Gostaria de agendar uma consulta odontológica na Sorria Bem Garavelo." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center px-6 py-4 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-black text-base shadow-lg shadow-emerald-950/40 cursor-pointer hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5 group">
+                    <i data-lucide="phone" class="w-5 h-5 mr-2.5 group-hover:scale-110 transition-transform"></i>
+                    <span>Iniciar Conversa no WhatsApp</span>
+                  </a>
+                  <div class="flex flex-wrap gap-3 items-center justify-center mt-5 text-[11px] text-slate-300 font-semibold">
+                    <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-emerald-400 mr-1.5 animate-ping inline-block"></span>Atendimento Online</span>
+                    <span class="text-slate-500">•</span>
+                    <span>Avaliações completas</span>
+                    <span class="text-slate-500">•</span>
+                    <span>Planos facilitados</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Mapa Embedado -->
+          <div id="localizacao" class="mt-14 rounded-3xl overflow-hidden shadow-sm border border-slate-200/80 bg-white p-4 reveal">
+            <div class="flex flex-col md:flex-row items-stretch md:items-center justify-between p-4 gap-4 border-b border-slate-100 pb-4 mb-4">
+              <div>
+                <div class="flex flex-wrap gap-2 items-center">
+                  <span class="text-[10px] font-black uppercase tracking-wider bg-amber-100 text-amber-900 border border-amber-300/70 px-2.5 py-1 rounded-md flex items-center gap-1">
+                    <i data-lucide="sparkles" class="w-3 h-3 text-amber-600"></i>Localização Estratégica
+                  </span>
+                  <span class="text-[10px] font-bold text-slate-400">• Avenida da Igualdade</span>
+                </div>
+                <h3 class="text-lg font-black text-[#0F172A] mt-2 font-display">Visite nossa clínica em Aparecida de Goiânia</h3>
+                <p class="text-xs text-slate-500 mt-1 font-medium">Setor Garavelo - Área comercial de fácil acesso, com estacionamento privativo e recepção climatizada.</p>
+              </div>
+              <a href="https://maps.app.goo.gl/1mj4SZGZYQGaWLKn6" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-[#0F172A] text-white hover:text-brand-yellow text-xs font-bold hover:bg-slate-800 transition cursor-pointer shrink-0 shadow-xs">
+                <i data-lucide="navigation-2" class="w-4 h-4 mr-1.5 fill-brand-yellow"></i>Abrir no GPS do Celular
+              </a>
+            </div>
+
+            <div class="relative w-full h-[320px] sm:h-[400px] rounded-2xl overflow-hidden bg-slate-100 shadow-inner">
+              <iframe
+                title="Localização da Sorria Bem Garavelo - Odontologia"
+                src="https://maps.google.com/maps?q=Avenida%20da%20Igualdade%20Aparecida%20de%20Goi%C3%A2nia&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                class="absolute inset-0 w-full h-full border-0"
+                allowfullscreen="true"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 10. RODAPÉ SECTION -->
+    <footer class="bg-brand-dark text-slate-400 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+          <!-- Coluna 1 -->
+          <div class="space-y-4">
+            <a href="#inicio" class="inline-block select-none group mb-2" id="footer-logo">
+              <img 
+                src="./imagens/logo-rodape.png" 
+                alt="Sorria Bem Garavelo" 
+                class="h-16 w-auto object-contain rounded-xl shadow-md group-hover:scale-105 transition-transform duration-300"
+              />
+            </a>
+            <p class="text-sm text-slate-400 leading-relaxed max-w-xs font-normal">Oferecendo tratamentos odontológicos modernos, humanizados e acolhedores em Aparecida de Goiânia. Resgatando seu prazer em sorrir.</p>
+          </div>
+
+          <!-- Coluna 2: Navegação -->
+          <div>
+            <h4 class="text-xs font-black uppercase text-white tracking-widest mb-6 border-b border-slate-800 pb-2">Navegação</h4>
+            <ul class="space-y-3 text-sm font-semibold">
+              <li><a href="#inicio" class="hover:text-brand-yellow transition-colors">Início</a></li>
+              <li><a href="#galeria" class="hover:text-brand-yellow transition-colors">Galeria</a></li>
+              <li><a href="#servicos" class="hover:text-brand-yellow transition-colors">Especialidades</a></li>
+              <li><a href="#sobre" class="hover:text-brand-yellow transition-colors">Quem Somos</a></li>
+              <li><a href="#diferenciais" class="hover:text-brand-yellow transition-colors">Diferenciais</a></li>
+              <li><a href="#faq" class="hover:text-brand-yellow transition-colors">Dúvidas Frequentes</a></li>
+              <li><a href="#localizacao" class="hover:text-brand-yellow transition-colors">Localização</a></li>
+              <li><a href="#contato" class="hover:text-brand-yellow transition-colors">Contato</a></li>
+            </ul>
+          </div>
+
+          <!-- Coluna 3: Localização -->
+          <div class="space-y-4">
+            <h4 class="text-xs font-black uppercase text-white tracking-widest mb-6 border-b border-slate-800 pb-2">Unidade Garavelo</h4>
+            <div class="flex items-start space-x-3 text-sm leading-relaxed text-slate-400">
+              <i data-lucide="map-pin" class="w-5 h-5 text-brand-yellow shrink-0 mt-0.5"></i>
+              <span class="font-medium">QD 114, LT 20A, Avenida da Igualdade, Aparecida de Goiânia GO, 74930-530, Brasil</span>
+            </div>
+            <div class="flex items-center space-x-3 text-sm text-slate-400">
+              <i data-lucide="phone" class="w-5 h-5 text-brand-yellow shrink-0"></i>
+              <a href="https://wa.me/556282790106" target="_blank" rel="noopener noreferrer" class="hover:text-brand-yellow font-bold transition-colors">+55 62 8279-0106</a>
+            </div>
+          </div>
+
+          <!-- Coluna 4: Horários -->
+          <div>
+            <h4 class="text-xs font-black uppercase text-white tracking-widest mb-6 border-b border-slate-800 pb-2">Horários</h4>
+            <ul class="space-y-2 text-sm text-slate-400 font-medium md:max-w-xs">
+              <li class="flex justify-between border-b border-slate-800 pb-1"><span>Segunda-feira:</span><span class="text-slate-200 font-semibold">08:00–19:00</span></li>
+              <li class="flex justify-between border-b border-slate-800 pb-1"><span>Terça-feira:</span><span class="text-slate-200 font-semibold">08:00–19:00</span></li>
+              <li class="flex justify-between border-b border-slate-800 pb-1"><span>Quarta-feira:</span><span class="text-slate-200 font-semibold">08:00–19:00</span></li>
+              <li class="flex justify-between border-b border-slate-800 pb-1"><span>Quinta-feira:</span><span class="text-slate-200 font-semibold">08:00–19:00</span></li>
+              <li class="flex justify-between border-b border-slate-800 pb-1"><span>Sexta-feira:</span><span class="text-slate-200 font-semibold">08:00–19:00</span></li>
+              <li class="flex justify-between border-b border-slate-800 pb-1"><span>Sábado:</span><span class="text-slate-200 font-semibold">08:00–13:00</span></li>
+              <li class="flex justify-between"><span>Domingo:</span><span class="text-slate-500">Fechado</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-slate-800 mt-16 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-medium">
+          <div>
+            <p>© 2026 Sorria Bem Garavelo. Todos os direitos reservados.</p>
+          </div>
+          <div class="flex space-x-6">
+            <button id="open-terms-modal-btn" class="hover:text-brand-yellow font-semibold cursor-pointer focus:outline-none transition-colors">Termos de uso</button>
+            <button id="open-privacy-modal-btn" class="hover:text-brand-yellow font-semibold cursor-pointer focus:outline-none transition-colors">Privacidade</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 11. FLOAT WHATSAPP WIDGET (Sempre visível em todas as telas desde o carregamento inicial) -->
+    <div id="float-whatsapp-widget" class="fixed bottom-6 right-6 z-50 flex flex-col items-end transition-all duration-300">
+      <!-- Tooltip explicativo -->
+      <div id="float-whatsapp-tooltip" class="bg-white text-brand-dark text-xs font-bold px-4 py-2.5 rounded-2xl shadow-xl border border-gray-100 mb-2 mr-1 flex items-center space-x-2 max-w-xs transition-all duration-300">
+        <div class="w-2 h-2 bg-emerald-500 rounded-full animate-ping shrink-0"></div>
+        <span>Atendimento no WhatsApp</span>
+        <button id="close-whatsapp-tooltip" class="text-gray-400 hover:text-gray-600 font-bold ml-2 text-[10px] focus:outline-none cursor-pointer">✕</button>
+      </div>
+
+      <!-- Botão Flutuante -->
+      <a
+        href="https://wa.me/556282790106?text=Olá! Visitei o site da Sorria Bem Garavelo e gostaria de falar com um atendente."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center justify-center w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-xl relative cursor-pointer hover:scale-110 active:scale-95 transition-all duration-300"
+        aria-label="Fale direto pelo WhatsApp"
+      >
+        <span class="absolute -inset-1 rounded-full bg-emerald-500/30 blur animate-ping -z-10"></span>
+        <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.458h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- MODAL TERMOS DE USO -->
+    <div id="terms-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 sm:p-6 bg-slate-900/60 backdrop-blur-sm">
+      <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[85vh] sm:max-h-[80vh] flex flex-col shadow-2xl border border-slate-150 overflow-hidden animate-fadeInUp">
+        <div class="flex items-center justify-between px-6 py-4 border-b border-slate-100">
+          <h3 class="text-lg font-bold font-display text-brand-dark">Termos de Uso</h3>
+          <button id="close-terms-btn" class="p-1 rounded-lg text-slate-400 hover:text-slate-600 hover:bg-slate-50 transition-colors">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+        <div class="p-6 overflow-y-auto text-sm text-slate-600 space-y-4 leading-relaxed">
+          <p class="font-semibold text-brand-dark">Seja bem-vindo ao portal da Sorria Bem Garavelo - Odontologia!</p>
+          <p>Ao navegar em nosso site, utilizar nossos canais de agendamento ou interagir com nossos serviços digitais, você concorda com os termos e condições descritos abaixo:</p>
+          
+          <h4 class="font-bold text-brand-dark mt-4">1. Finalidade do Portal</h4>
+          <p>As informações deste site possuem caráter informativo e educativo sobre saúde bucal e os procedimentos odontológicos oferecidos em nossa unidade. Elas não substituem uma consulta presencial, diagnóstico clínico ou avaliação individual por um cirurgião-dentista qualificado.</p>
+          
+          <h4 class="font-bold text-brand-dark mt-4">2. Agendamentos e Atendimentos</h4>
+          <p>As solicitações de agendamento via WhatsApp representam pré-reservas de horário sujeitas à confirmação de nossa equipe de recepção. Buscamos sempre a máxima pontualidade e comodidade aos nossos pacientes.</p>
+
+          <h4 class="font-bold text-brand-dark mt-4">3. Propriedade Intelectual</h4>
+          <p>Os conteúdos presentes neste portal (textos, imagens institucionais, logotipos e layout) são de propriedade da Sorria Bem Garavelo e protegidos pela legislação de direitos autorais vigente.</p>
+
+          <h4 class="font-bold text-brand-dark mt-4">4. Alterações nos Termos</h4>
+          <p>Estes termos podem ser atualizados periodicamente para refletir melhorias no atendimento ou adequações normativas do Conselho Regional de Odontologia de Goiás (CRO-GO).</p>
+
+          <p class="text-xs text-slate-400 pt-4">Última atualização: Novembro de 2026. Sorria Bem Garavelo.</p>
+        </div>
+        <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex justify-end">
+          <button id="close-terms-btn-footer" class="px-5 py-2.5 rounded-xl bg-brand-yellow text-brand-dark font-extrabold text-xs hover:bg-amber-400 transition-all shadow-xs">
+            Entendi, fechar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL POLÍTICA DE PRIVACIDADE -->
+    <div id="privacy-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 sm:p-6 bg-slate-900/60 backdrop-blur-sm">
+      <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[85vh] sm:max-h-[80vh] flex flex-col shadow-2xl border border-slate-150 overflow-hidden animate-fadeInUp">
+        <div class="flex items-center justify-between px-6 py-4 border-b border-slate-100">
+          <h3 class="text-lg font-bold font-display text-brand-dark">Política de Privacidade</h3>
+          <button id="close-privacy-btn" class="p-1 rounded-lg text-slate-400 hover:text-slate-600 hover:bg-slate-50 transition-colors">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+        <div class="p-6 overflow-y-auto text-sm text-slate-600 space-y-4 leading-relaxed">
+          <p class="font-semibold text-brand-dark">A sua privacidade é tratada com total seriedade e respeito pela Sorria Bem Garavelo!</p>
+          <p>Esta Política descreve como tratamos e protegemos os seus dados pessoais, em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018):</p>
+          
+          <h4 class="font-bold text-brand-dark mt-4">1. Dados Coletados</h4>
+          <p>Ao entrar em contato pelo WhatsApp ou telefone, processamos dados estritamente necessários para o atendimento, tais como nome, telefone e o motivo da consulta ou especialidade de interesse.</p>
+          
+          <h4 class="font-bold text-brand-dark mt-4">2. Finalidade do Tratamento</h4>
+          <p>Seus dados são utilizados exclusivamente para:</p>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>Efetuar pré-agendamento e confirmação de horários de consultas;</li>
+            <li>Esclarecer dúvidas sobre tratamentos e procedimentos;</li>
+            <li>Lembrar você sobre retornos e consultas agendadas.</li>
+          </ul>
+
+          <h4 class="font-bold text-brand-dark mt-4">3. Sigilo e Proteção</h4>
+          <p>Não vendemos nem compartilhamos seus dados com terceiros para fins comerciais. Suas informações são acessadas apenas por profissionais autorizados responsáveis pelo seu atendimento.</p>
+
+          <h4 class="font-bold text-brand-dark mt-4">4. Direitos do Titular (LGPD)</h4>
+          <p>Você pode solicitar a qualquer momento a confirmação, atualização ou exclusão de seus dados de contato através do nosso canal de atendimento no WhatsApp: +55 62 8279-0106.</p>
+
+          <p class="text-xs text-slate-400 pt-4">Última atualização: Novembro de 2026. Sorria Bem Garavelo.</p>
+        </div>
+        <div class="px-6 py-4 bg-slate-50 border-t border-slate-100 flex justify-end">
+          <button id="close-privacy-btn-footer" class="px-5 py-2.5 rounded-xl bg-brand-yellow text-brand-dark font-extrabold text-xs hover:bg-amber-400 transition-all shadow-xs">
+            Entendi, fechar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Main Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
